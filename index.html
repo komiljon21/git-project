@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+       <a href="#" class="logo">Jungle</a>
+       <ul>
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Contact</a></li>
+       </ul> 
+    </header>
+    <section>
+        <h2 id="text"><cpan>It's time for a new</cpan><br>Adventure</h2>
+        <img src="bird1.jpg" id="bird1">
+        <img src="bird2.jpg" id="bird2">
+        <img src="forest.jpg" id="forest">
+        <a href="#" id="btn">"Explore</a>
+        <img src="rocks.jpg" id="rocks">
+        <img src="water.jpg" id="water">
+
+
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, possimus fugiat, repellendus nemo eligendi dicta dolorum natus inventore cupiditate repellat nihil consequuntur porro! Qui labore facere error corporis praesentium perspiciatis, et modi possimus perferendis! Adipisci totam, perspiciatis, libero placeat fuga quis doloribus nemo ullam natus esse perferendis harum quia sapiente.<br><br> Provident commodi qui accusamus eos. Deleniti placeat reiciendis ipsa commodi vitae iste inventore, obcaecati soluta ea necessitatibus atque officiis provident nesciunt est qui quos nulla. Distinctio dolore quidem molestiae praesentium perferendis asperiores, qui cumque, hic incidunt necessitatibus placeat corrupti voluptate numquam minus excepturi adipisci debitis exercitationem tenetur temporibus ea doloribus porro vel magni esse? Cum dolorem labore ipsam, quis fugiat expedita blanditiis consectetur, adipisci doloribus voluptatibus minima perspiciatis cupiditate totam ab distinctio sunt sequi odio quibusdam recusandae perferendis possimus rem nobis? Exercitationem maxime accusantium atque id ab cumque dolores fugit dolorum neque maiores, error repellat, impedit odio illo! Excepturi labore optio ratione quisquam voluptatibus.<br><br> Ipsum enim suscipit architecto odio mollitia tenetur porro libero, eaque quis alias ullam esse totam obcaecati doloremque aperiam! Ut, magnam assumenda! A, consectetur dolorem? Ipsa pariatur quia ratione omnis dicta voluptas error, odio harum, delectus corrupti necessitatibus ab quod doloribus natus at perferendis quis vitae consequuntur? Dolore dolores voluptate quo exercitationem reiciendis aliquam, nemo ducimus nostrum a consectetur minus perspiciatis eveniet totam sunt! Facere, at atque magnam dolorem, incidunt vel iusto, provident sequi consequuntur iste accusamus accusantium est exercitationem aliquam animi ducimus voluptas modi cumque! Repellendus illum ut consectetur quidem placeat. Sapiente esse eaque totam illum modi. Voluptatibus pariatur ex vitae consectetur recusandae itaque aut. Iste incidunt laborum nesciunt eaque eius ratione sunt illum aperiam enim mollitia rerum sed ut, ad alias placeat vero quam adipisci sint. Perferendis recusandae optio facilis deserunt accusamus cupiditate asperiores. Ullam veritatis, at ipsa magni, cumque hic alias, eius enim amet saepe dignissimos perferendis. Iure, dolore sit possimus velit saepe ipsam corrupti cumque ex asperiores amet ducimus minus. Repellendus nisi minus labore incidunt laudantium alias, eos iusto rerum. Repudiandae tempora, quod odit sint voluptates ut voluptate cumque fuga officia iusto alias aliquid corrupti.<br><br> Nihil eaque aspernatur eius quia accusamus autem, facilis hic qui a libero sint aperiam doloribus voluptas voluptatum obcaecati commodi quo sed dolorum provident eveniet ratione quaerat possimus nulla! Modi error officia nesciunt eos atque at nulla ex quos voluptatem maxime minima accusantium aliquam repellendus similique reiciendis, nam dolores explicabo esse ratione sunt.
+            Architecto rem in saepe repellat ipsum quos, enim dolorem animi sed quo nulla numquam? Ad, vero deserunt quasi non nulla quod?
+Nobis aliquid quo, blanditiis delectus magnam maiores voluptatibus explicabo rerum impedit mollitia cumque dolorem repudiandae quod hic fuga asperiores tempora suscipit nihil nisi ipsum eveniet iusto vel. Facilis est debitis earum, quidem quo architecto quod mollitia ratione nesciunt itaque et, exercitationem beatae eos repellendus minus dolores, in officiis ullam consequatur tempora iusto molestias? Iste, aperiam atque, dignissimos aliquam ad laborum laudantium aut, deleniti numquam rerum dolorem molestias aliquid quisquam nisi architecto commodi mollitia eligendi reprehenderit explicabo asperiores corrupti voluptatum! Quia nemo perferendis sit voluptatibus? Repellat?</p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text')
+        let photo1 = document.getElementById('photo1')
+        let photo2 = document.getElementById('photo2')
+        let photo3 = document.getElementById('photo3')
+        let photo4 = document.getElementById('photo4')
+        let N = document.getElementById('photo5')
+        let header = document.getElementById('header')
+
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY
+
+            text.style.top = 50 + value * -0.5 + '%';
+            photo1.style.top = value * -1.5 + 'px';
+            photo1.style.left = value * 2 + 'px';
+            photo2.style.top = value * -1.5 + 'px';
+            photo2.style.left = value * -5 + 'px';
+            photo3.style.marginTop = value * 1.5 + 'px';
+            photo4.style.top = value * -0.12 + 'px';
+        })
+    </script>
+</body>
+</html>
